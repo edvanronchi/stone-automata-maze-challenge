@@ -1,0 +1,49 @@
+body{
+    background: #5b5858;
+}
+
+#tableMatriz {
+    border-collapse: collapse;
+    text-align: center;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.container-buttons {
+    margin: 10px;
+}
+
+button, input {
+    background: #333;
+    color: #ccc;
+    width: 100px;
+    height: 60px;
+    border: 0;
+    font-size: 18px;
+    border-radius: 4px;
+    font-family: 'Raleway', sans-serif;
+    transition: 0.6s;
+    overflow: hidden;
+}
+button:focus {
+    outline: 0;
+}
+button:hover {
+    background: #00A868;
+    cursor: pointer;
+}
+button:hover:before {
+    transform: translateX(300px) skewX(-15deg);
+    opacity: 0.6;
+    transition: 0.7s;
+}
+button:hover:after {
+    transform: translateX(300px) skewX(-15deg);
+    opacity: 1;
+    transition: 0.7s;
+}
